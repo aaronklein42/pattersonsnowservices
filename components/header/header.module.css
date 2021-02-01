@@ -1,0 +1,49 @@
+.header {
+    width: 100%;
+    background-color: rgb(0,0,0,0.5);
+    display: inline-block;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.companyName {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+}
+
+.contactInfo {
+    padding: 0 40px;
+}
+
+.phoneNumber, .emailAddress{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.phoneNumber {
+    font-size: 40px;
+}
+
+.logo {
+    padding: 0 50px;
+}
+
+.logo img{
+    margin: 0 auto 0 auto;
+    height: 80px;
+    display: inline-block;
+}
+
+@media(min-width:1000px) {
+    .header {
+        grid-template-columns: auto 1fr auto;
+    }
+
+
+}

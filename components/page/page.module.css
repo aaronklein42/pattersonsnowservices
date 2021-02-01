@@ -1,0 +1,26 @@
+.content {
+    background-image: url("/americanbackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.content:before {
+    background-color: rgba(0,0,0,0.8);
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.contentWrapper {
+    height: 100vh;
+    overflow-y: auto;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
