@@ -1,0 +1,64 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-items: center;
+}
+
+.modalBody {
+    background-color: rgb(221, 213, 202);
+    max-width: 100%;
+    padding: 25px;
+}
+
+.active {
+    display: grid;
+}
+
+.modalHeader {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 25px;
+    padding-bottom: 50px;
+    align-items: center;
+}
+
+.closeButton {
+    background-color: red;
+    border: 0 solid;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.modalTitle {
+    margin: 0;
+}
+
+.button, 
+.button:hover, 
+.button:active, 
+.button:visited {
+    padding: 10px 20px;
+    background-image: linear-gradient(#99c7da, #5b739c);
+    color: white;
+    border: 2px solid;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
+    font-size: 25px;
+    font-weight: bold;
+    font-variant-caps: small-caps;
+    font-family: Montserrat;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 25px;
+}
+

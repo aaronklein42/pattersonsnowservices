@@ -1,6 +1,11 @@
 import css from './homeContent.module.css'
+import Modal from '../modal/modal'
+import {useState} from 'react'
 
 export default function HomeContent() {
+    const [active, setActive] = useState(false)
+    const openModal = () => setActive(true)
+
     return (
         <div className={css.homePage}>
             <main className={css.main}>
@@ -13,7 +18,8 @@ export default function HomeContent() {
                     </p>
                 </div>
                 <div className={css.services}>
-                    <button className={css.services__button}>Get a Quote!</button>
+                    <Modal active={active} setActive={setActive}/>
+                    <button className={css.services__button} onClick={openModal}>Get a Quote!</button>
                 </div>
             </main>
             <section className={css.serviceArea}><img className={css.serviceArea__map} src="map.png"/></section>
